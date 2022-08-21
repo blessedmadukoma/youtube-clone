@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Position Practice</title>
+</head>
+
+<!-- 
+z-index: helps to show an element infront or at the back
+ Position: static: static lol. by default, the element is at the back.
+
+ Position: fixed: places an element on the browser window, so when we scroll, the element stays fixed.
+
+ Position: absolute: places an element on the page, so when we scroll, the element moves.
+
+ Position: relative: causes the element to display normally.
+ -->
+
+ <!-- 
+  WHen an element is position: absolute; inside of a div with position: relative; that element is placed inside the div and is 'relative' to the div, not on the page (position: absolute default setting) 
+  -->
+
+<body style="height: 3000px; padding-top: 60px; padding-left: 80px;">
+ <div style="background-color: black; color: white; position: fixed; top: 0; left: 30px; right: 50px; bottom: 50px;">
+  header</div>
+
+ <div style="background-color: green; color:white; position:fixed;left: 0; bottom: 0; top:55px; width: 72px;">sidebar
+ </div>
+
+ <div style="background-color: red; color: white; position: absolute; ">Absolute</div>
+
+ <div style="background-color: lightblue; height: 200px; width: 200px;">div 1</div>
+ <div style="background-color: lightpink; height: 200px; width: 200px;">div 1</div>
+</body>
+
+</html>
